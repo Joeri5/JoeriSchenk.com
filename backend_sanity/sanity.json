@@ -1,11 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "vercel",
-    "basePath": "/studio"
+    "name": "Joeri"
   },
   "api": {
-    "projectId": "n48oydwo",
+    "projectId": "21vqqu7t",
     "dataset": "production"
   },
   "plugins": [
