@@ -1,10 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "Joeri"
+    "name": "vercel",
+    "basePath": "/studio"
   },
   "api": {
-    "projectId": "21vqqu7t",
+    "projectId": "n48oydwo",
     "dataset": "production"
   },
   "plugins": [
@@ -15,9 +16,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
