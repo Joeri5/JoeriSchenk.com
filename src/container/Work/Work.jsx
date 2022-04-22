@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { AiFillEye, AiFillGithub, AiTwotoneBuild } from "react-icons/ai";
+import { CgFigma } from "react-icons/cg";
 import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
@@ -88,16 +89,34 @@ const Work = () => {
                 ) : (
                   <></>
                 )}
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.2 }}
-                    className="app__flex"
-                  >
-                    <AiFillGithub />
-                  </motion.div>
-                </a>
+                {work.codeLink ? (
+                  <a href={work.codeLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.2 }}
+                      className="app__flex"
+                    >
+                      <AiFillGithub />
+                    </motion.div>
+                  </a>
+                ) : (
+                  <></>
+                )}
+                {work.designLink ? (
+                  <a href={work.designLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.2 }}
+                      className="app__flex"
+                    >
+                      <CgFigma />
+                    </motion.div>
+                  </a>
+                ) : (
+                  <></>
+                )}
               </motion.div>
             </div>
             <div className="app__work-content app__flex">
