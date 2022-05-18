@@ -1,7 +1,6 @@
-
 import createSchema from 'part:@sanity/base/schema-creator'
-
 import schemaTypes from 'all:part:@sanity/base/schema-type'
+
 import works from './works'
 import testimonials from './testimonials'
 import brands from './brands'
@@ -10,6 +9,7 @@ import skills from './skills'
 import workExperience from './workExperience'
 import experiences from './experiences'
 import contact from './contact'
+import caseStudy from './caseStudy'
 
 export default createSchema({
 
@@ -24,5 +24,6 @@ export default createSchema({
     workExperience,
     experiences,
     contact,
+    caseStudy,
   ]),
 })

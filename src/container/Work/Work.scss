@@ -45,8 +45,13 @@
     justify-content: center;
     align-items: center;
 
+    a {
+        text-decoration: none;
+    }
+
     .app__work-item {
         width: 270px;
+        height: 370px;
         flex-direction: column;
         margin: 2rem;
         padding: 1rem;
@@ -124,6 +129,7 @@
 }
 
 .app__work-content {
+    text-decoration: none;
     padding: 0.5rem;
     width: 100%;
     position: relative;

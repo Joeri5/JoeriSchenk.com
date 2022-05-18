@@ -8,7 +8,19 @@ export default {
       title: "Title",
       type: "string",
     },
-
+    {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 200,
+        slugify: input => input
+                              .toLowerCase()
+                              .replace(/\s+/g, '-')
+                              .slice(0, 200)
+      }
+    },
     {
       name: "description",
       title: "Description",
@@ -30,6 +42,11 @@ export default {
       type: "string",
     },
     {
+      name: 'casestudy',
+      title: 'Case Study?',
+      type: 'boolean'
+    },
+    {
       name: "imgUrl",
       title: "ImageUrl",
       type: "image",
@@ -37,7 +54,6 @@ export default {
         hotspot: true,
       },
     },
-
     {
       name: "tags",
       title: "Tags",
